@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <meta name="description" content="إبداع — منظومة إبداعية مفتوحة المصدر ومجانية. بديل حر لأدوات Adobe Creative Cloud. أبدع بلا حدود.">
+  <meta name="keywords" content="إبداع, Ebdaa, IBDAA, open source, creative suite, Adobe alternative, design, video editing, illustration">
+  <meta property="og:title" content="إبداع — أبدع بلا حدود">
+  <meta property="og:description" content="منظومة إبداعية مفتوحة المصدر ومجانية. بديل حر لأدوات Adobe Creative Cloud.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://github.com/Terra-Soft/Ebda">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Ebdā' — Create Without Limits">
+  <meta name="twitter:description" content="A free, open-source creative ecosystem. An alternative to Adobe Creative Cloud.">
+  <title>إبداع — أبدع بلا حدود | Ebdā' — Create Without Limits</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ═══════════════════════ NAVIGATION ═══════════════════════ -->
+  <nav class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <a href="#" class="nav-brand" aria-label="إبداع">
+        <img src="assets/logo.svg" alt="" width="36" height="36">
+        <div class="nav-brand-text">
+          <span class="nav-brand-ar">إبداع</span>
+          <span class="nav-brand-en">EBDĀ'</span>
+        </div>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="القائمة" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active" data-i18n="nav.home">الرئيسية</a>
+        <a href="#apps" class="nav-link" data-i18n="nav.apps">التطبيقات</a>
+        <a href="#about" class="nav-link" data-i18n="nav.about">عن إبداع</a>
+        <a href="#vision" class="nav-link" data-i18n="nav.vision">الرؤية</a>
+        <a href="https://github.com/Terra-Soft/Ebda" class="nav-link nav-link--external" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <button class="lang-switch" id="langSwitch" aria-label="Switch language">
+          <span class="lang-switch-label" data-i18n="nav.lang">EN</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <svg class="hero-art" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <defs>
+          <linearGradient id="heroGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#9664D9" stop-opacity="0.15"/>
+            <stop offset="100%" stop-color="#D77A52" stop-opacity="0.08"/>
+          </linearGradient>
+          <linearGradient id="heroGrad2" x1="100%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#F2B36F" stop-opacity="0.12"/>
+            <stop offset="100%" stop-color="#4C73C8" stop-opacity="0.06"/>
+          </linearGradient>
+          <radialGradient id="heroGlow" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#9b7bea" stop-opacity="0.08"/>
+            <stop offset="100%" stop-color="#9b7bea" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="1200" height="600" fill="url(#heroGlow)"/>
+        <!-- Abstract creative elements -->
+        <path d="M200 500 Q 400 100 600 300 T 1000 200" fill="none" stroke="url(#heroGrad1)" stroke-width="1.5" opacity="0.6"/>
+        <path d="M100 400 Q 350 150 650 350 T 1100 250" fill="none" stroke="url(#heroGrad2)" stroke-width="1" opacity="0.4"/>
+        <circle cx="900" cy="150" r="120" fill="url(#heroGrad1)" opacity="0.3"/>
+        <circle cx="300" cy="450" r="80" fill="url(#heroGrad2)" opacity="0.25"/>
+        <!-- Grid pattern -->
+        <line x1="0" y1="200" x2="1200" y2="200" stroke="#9b7bea" stroke-width="0.3" opacity="0.1"/>
+        <line x1="0" y1="400" x2="1200" y2="400" stroke="#9b7bea" stroke-width="0.3" opacity="0.1"/>
+        <line x1="400" y1="0" x2="400" y2="600" stroke="#9b7bea" stroke-width="0.3" opacity="0.1"/>
+        <line x1="800" y1="0" x2="800" y2="600" stroke="#9b7bea" stroke-width="0.3" opacity="0.1"/>
+        <!-- Decorative shapes -->
+        <polygon points="950,80 980,140 920,140" fill="none" stroke="#d58b68" stroke-width="0.8" opacity="0.3"/>
+        <rect x="150" y="120" width="40" height="40" rx="4" fill="none" stroke="#9b7bea" stroke-width="0.6" opacity="0.2" transform="rotate(15 170 140)"/>
+        <circle cx="750" cy="480" r="6" fill="#d58b68" opacity="0.25"/>
+        <circle cx="1050" cy="350" r="4" fill="#9b7bea" opacity="0.2"/>
+        <circle cx="250" cy="250" r="3" fill="#d58b68" opacity="0.3"/>
+      </svg>
+    </div>
+    <div class="hero-content">
+      <div class="hero-kicker">
+        <span class="hero-kicker-dot"></span>
+        <span data-i18n="hero.kicker">منظومة إبداعية مفتوحة المصدر</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line" data-i18n="hero.title1">أبدع</span>
+        <span class="hero-title-line hero-title--accent" data-i18n="hero.title2">بلا حدود.</span>
+      </h1>
+      <p class="hero-desc" data-i18n="hero.desc">منظومة أدوات إبداعية احترافية، مفتوحة المصدر ومجانية بالكامل. بديل حر لبرامج Adobe Creative Cloud — مبنية للمبدعين العرب والعالم.</p>
+      <div class="hero-actions">
+        <a href="#apps" class="btn btn--primary">
+          <span data-i18n="hero.cta1">استكشف التطبيقات</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m-6-6 6 6-6 6"/></svg>
+        </a>
+        <a href="https://github.com/Terra-Soft/Ebda" class="btn btn--ghost" target="_blank" rel="noopener noreferrer">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          <span data-i18n="hero.cta2">GitHub</span>
+        </a>
+      </div>
+      <div class="hero-meta">
+        <span class="hero-meta-item"><span class="hero-meta-value">8</span> <span data-i18n="hero.meta1">تطبيقات إبداعية</span></span>
+        <span class="hero-meta-sep"></span>
+        <span class="hero-meta-item"><span data-i18n="hero.meta2">مفتوح المصدر</span></span>
+        <span class="hero-meta-sep"></span>
+        <span class="hero-meta-item"><span data-i18n="hero.meta3">مجاني بالكامل</span></span>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14m-6-6 6 6 6-6"/></svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section class="section section--about" id="about">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="section-overline" data-i18n="about.overline">ABOUT EBDĀ'</span>
+      </div>
+      <div class="about-layout">
+        <div class="about-text">
+          <h2 class="section-title" data-i18n="about.title">ما هي إبداع؟</h2>
+          <p class="about-lead" data-i18n="about.lead">إبداع هي منظومة برمجيات إبداعية مفتوحة المصدر، تهدف إلى تقديم بديل حر ومجاني لأدوات Adobe Creative Cloud.</p>
+          <p class="about-body" data-i18n="about.body1">تضم المنظومة مجموعة متكاملة من التطبيقات الاحترافية — من تحرير الصور والتصميم الرقمي، إلى الرسم المتجه وتحرير الفيديو، ومعالجة الصوت والنشر المكتبي — جميعها مصممة بواجهة عربية أصلية مع دعم كامل للغة الإنجليزية.</p>
+          <p class="about-body" data-i18n="about.body2">المشروع في مراحل التطوير المبكرة، ويسعى لبناء مجتمع من المطورين والمبدعين العرب لإنشاء أدوات إبداعية عالمية المستوى.</p>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <div class="about-card-icon">
+              <img src="assets/logo.svg" alt="" width="64" height="64">
+            </div>
+            <div class="about-card-label" data-i18n="about.card_label">المنظومة الإبداعية</div>
+            <div class="about-card-apps">
+              <img src="assets/icons/musammim.svg" alt="مصمم" width="32" height="32" title="مصمم — Musammim">
+              <img src="assets/icons/rassam.svg" alt="رسّام" width="32" height="32" title="رسّام — Rassam">
+              <img src="assets/icons/mumentej.svg" alt="مُمنتج" width="32" height="32" title="مُمنتج — Mumentej">
+              <img src="assets/icons/muharrik.svg" alt="مُحرّك" width="32" height="32" title="مُحرّك — Muharrik">
+              <img src="assets/icons/nasher.svg" alt="ناشر" width="32" height="32" title="ناشر — Nasher">
+              <img src="assets/icons/sawt.svg" alt="مهندس الصوت" width="32" height="32" title="مهندس الصوت — Sawt">
+              <img src="assets/icons/modie.svg" alt="مُضيء" width="32" height="32" title="مُضيء — Modie">
+              <img src="assets/icons/wathaeq.svg" alt="وثائق" width="32" height="32" title="وثائق — Wathaeq">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ APPLICATIONS ═══════════════════════ -->
+  <section class="section section--apps" id="apps">
+    <div class="section-inner">
+      <div class="section-header">
+        <div>
+          <span class="section-overline" data-i18n="apps.overline">CREATIVE APPLICATIONS</span>
+          <h2 class="section-title" data-i18n="apps.title">التطبيقات الإبداعية</h2>
+          <p class="section-desc" data-i18n="apps.desc">ثماني أدوات احترافية تغطي كل جوانب العمل الإبداعي — من التصميم إلى النشر.</p>
+        </div>
+      </div>
+      <div class="apps-grid">
+
+        <article class="app-card" style="--app-color: #3678E8">
+          <div class="app-card-header">
+            <img src="assets/icons/musammim.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">مصمم</h3>
+              <span class="app-card-en">Musammim</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.photos">الصور</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.musammim.desc">محرر الصور والتصميم الرقمي — لإنشاء التصاميم وتعديل الصور باحترافية.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #F1A33E">
+          <div class="app-card-header">
+            <img src="assets/icons/rassam.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">رسّام</h3>
+              <span class="app-card-en">Rassam</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.drawing">الرسم</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.rassam.desc">رسومات متجهة وشعارات وأيقونات — لتصميم الهويات البصرية والرسوم التوضيحية.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #20C89A">
+          <div class="app-card-header">
+            <img src="assets/icons/mumentej.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">مُمنتج</h3>
+              <span class="app-card-en">Mumentej</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.video">الفيديو</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.mumentej.desc">تحرير الفيديو وترتيب المقاطع — لإنتاج محتوى مرئي احترافي.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #A76BEB">
+          <div class="app-card-header">
+            <img src="assets/icons/muharrik.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">مُحرّك</h3>
+              <span class="app-card-en">Muharrik</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.motion">الحركة</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.muharrik.desc">تحريك العناصر والمؤثرات البصرية — لإنشاء رسوم متحركة ومؤثرات سينمائية.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #E15D86">
+          <div class="app-card-header">
+            <img src="assets/icons/nasher.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">ناشر</h3>
+              <span class="app-card-en">Nasher</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.publishing">النشر</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.nasher.desc">تصميم الكتب والمجلات والصفحات — للنشر المكتبي الاحترافي.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #4C91EC">
+          <div class="app-card-header">
+            <img src="assets/icons/sawt.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">مهندس الصوت</h3>
+              <span class="app-card-en">Sawt</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.audio">الصوت</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.sawt.desc">تحرير الصوت ومعالجة التسجيلات — لإنتاج صوتي احترافي.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #E6B94D">
+          <div class="app-card-header">
+            <img src="assets/icons/modie.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">مُضيء</h3>
+              <span class="app-card-en">Modie</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.photos">الصور</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.modie.desc">معالجة الصور وتصحيح الألوان — لتحسين الصور الفوتوغرافية باحترافية.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+        <article class="app-card" style="--app-color: #45C7D5">
+          <div class="app-card-header">
+            <img src="assets/icons/wathaeq.svg" alt="" width="48" height="48" class="app-card-icon">
+            <div>
+              <h3 class="app-card-name">وثائق</h3>
+              <span class="app-card-en">Wathaeq</span>
+            </div>
+            <span class="app-card-cat" data-i18n="apps.cat.docs">المستندات</span>
+          </div>
+          <p class="app-card-desc" data-i18n="apps.wathaeq.desc">قراءة ملفات PDF والتعليق عليها — لإدارة المستندات والمراجعات.</p>
+          <div class="app-card-footer">
+            <span class="app-status app-status--dev"><span class="app-status-dot"></span><span data-i18n="apps.status.dev">قيد التطوير</span></span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ VISION ═══════════════════════ -->
+  <section class="section section--vision" id="vision">
+    <div class="section-inner">
+      <div class="section-label">
+        <span class="section-overline" data-i18n="vision.overline">VISION &amp; PRINCIPLES</span>
+      </div>
+      <h2 class="section-title section-title--center" data-i18n="vision.title">الرؤية والمبادئ</h2>
+      <p class="section-desc section-desc--center" data-i18n="vision.desc">إبداع مبنية على مبادئ واضحة تضمن بقاءها مفتوحة، حرة، ومتاحة للجميع.</p>
+      <div class="vision-grid">
+
+        <div class="vision-card">
+          <div class="vision-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4m8-8 4 4-4 4m-3-11-2 14"/></svg>
+          </div>
+          <h3 data-i18n="vision.opensource.title">مفتوحة المصدر</h3>
+          <p data-i18n="vision.opensource.desc">الشفرة المصدرية متاحة بالكامل تحت رخصة MIT. يمكن لأي شخص قراءتها، تعديلها، وبناء مشاريع عليها.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 12h8m-4-4v8"/></svg>
+          </div>
+          <h3 data-i18n="vision.free.title">مجانية بالكامل</h3>
+          <p data-i18n="vision.free.desc">لا اشتراكات، لا رسوم، لا قيود. كل أداة في المنظومة مجانية تمامًا ومتاحة لكل المبدعين.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 3.5 7.5v9L12 21l8.5-4.5v-9L12 3Z"/><path d="M12 12 3.5 7.5M12 12v9m0-9 8.5-4.5"/></svg>
+          </div>
+          <h3 data-i18n="vision.professional.title">أدوات احترافية</h3>
+          <p data-i18n="vision.professional.desc">مصممة لتلبي احتياجات المحترفين والهواة على حد سواء، بمعايير جودة عالمية.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 8h14M5 12h14M5 16h10"/></svg>
+          </div>
+          <h3 data-i18n="vision.bilingual.title">عربية وإنجليزية</h3>
+          <p data-i18n="vision.bilingual.desc">واجهات أصلية باللغة العربية مع دعم كامل للإنجليزية. اتجاه RTL و LTR مدمج في التصميم.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8m-4-4v4"/></svg>
+          </div>
+          <h3 data-i18n="vision.crossplatform.title">متعددة المنصات</h3>
+          <p data-i18n="vision.crossplatform.desc">تطمح إبداع للعمل على Windows وmacOS وLinux، لتكون متاحة على جميع أنظمة التشغيل.</p>
+        </div>
+
+        <div class="vision-card">
+          <div class="vision-card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 data-i18n="vision.community.title">مجتمعية التطوير</h3>
+          <p data-i18n="vision.community.desc">مشروع مدفوع بالمجتمع. كل مساهمة — من كتابة الكود إلى التوثيق والتصميم — تساعد في بناء أدوات أفضل.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ COMMUNITY ═══════════════════════ -->
+  <section class="section section--community" id="community">
+    <div class="section-inner">
+      <div class="community-layout">
+        <div class="community-text">
+          <span class="section-overline" data-i18n="community.overline">OPEN SOURCE COMMUNITY</span>
+          <h2 class="section-title" data-i18n="community.title">ساهم في بناء إبداع</h2>
+          <p class="community-desc" data-i18n="community.desc">إبداع مشروع مفتوح المصدر ويرحب بكل المساهمات. سواء كنت مطورًا، مصممًا، كاتبًا تقنيًا، أو مبدعًا — يمكنك المساهمة في بناء أدوات إبداعية يستخدمها الملايين.</p>
+          <div class="community-actions">
+            <a href="https://github.com/Terra-Soft/Ebda" class="btn btn--primary" target="_blank" rel="noopener noreferrer">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span data-i18n="community.cta1">زيارة المستودع على GitHub</span>
+            </a>
+          </div>
+        </div>
+        <div class="community-visual">
+          <div class="community-repo-card">
+            <div class="repo-card-header">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" opacity="0.7"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <span>Terra-Soft / <strong>Ebda</strong></span>
+            </div>
+            <p class="repo-card-desc" data-i18n="community.repo_desc">منظومة إبداعية مفتوحة المصدر — بديل حر لبرامج Adobe Creative Cloud.</p>
+            <div class="repo-card-meta">
+              <span class="repo-lang"><span class="repo-lang-dot"></span>JavaScript</span>
+              <span>MIT License</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="" width="40" height="40">
+          <div>
+            <div class="footer-brand-ar">إبداع</div>
+            <div class="footer-brand-en">EBDĀ' CREATIVE ECOSYSTEM</div>
+          </div>
+        </div>
+        <nav class="footer-nav">
+          <a href="#home" data-i18n="nav.home">الرئيسية</a>
+          <a href="#apps" data-i18n="nav.apps">التطبيقات</a>
+          <a href="#about" data-i18n="nav.about">عن إبداع</a>
+          <a href="#vision" data-i18n="nav.vision">الرؤية</a>
+          <a href="https://github.com/Terra-Soft/Ebda" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+      <div class="footer-divider"></div>
+      <div class="footer-bottom">
+        <p class="footer-copy" data-i18n="footer.copy">إبداع — مشروع مفتوح المصدر تحت رخصة MIT.</p>
+        <p class="footer-tagline" data-i18n="footer.tagline">أبدع بلا حدود — Create Without Limits</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
